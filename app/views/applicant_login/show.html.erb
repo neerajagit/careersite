@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body align="center">
+
+<h2>Login as applicant</h2>
+
+<%= form_tag :action => 'create', :method => :post do |f| %>
+    <div><h4> Email </h4>
+    <%= text_field "applicant", "email", "size" => 20 %></div>
+    <div><h4> User Name </h4>
+    <%= text_field "applicant", "name", "size" => 20%></div>
+    <br>
+    <br>
+    <div><%= submit_tag( "Submit" )%></div>
+  <% end %>
+</body>
+</html>
