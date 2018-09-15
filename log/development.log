@@ -5449,3 +5449,71 @@ Completed 200 OK in 210ms (Views: 199.0ms | ActiveRecord: 3.1ms)
   ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+Migrating to CompanyLoadData (20180915074045)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[36mCompany Create (13.1ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Walmart"], ["created_at", "2018-09-15 07:42:44.634530"], ["updated_at", "2018-09-15 07:42:44.634530"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:4
+  [1m[36mCompany Create (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Target"], ["created_at", "2018-09-15 07:42:44.649402"], ["updated_at", "2018-09-15 07:42:44.649402"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:6
+  [1m[36mCompany Create (0.3ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Costco"], ["created_at", "2018-09-15 07:42:44.650842"], ["updated_at", "2018-09-15 07:42:44.650842"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:8
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Marshall"], ["created_at", "2018-09-15 07:42:44.651910"], ["updated_at", "2018-09-15 07:42:44.651910"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:10
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Jcpenny"], ["created_at", "2018-09-15 07:42:44.652951"], ["updated_at", "2018-09-15 07:42:44.652951"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:12
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kmart"], ["created_at", "2018-09-15 07:42:44.654025"], ["updated_at", "2018-09-15 07:42:44.654025"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:14
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Walgreens"], ["created_at", "2018-09-15 07:42:44.655091"], ["updated_at", "2018-09-15 07:42:44.655091"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:16
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ikea"], ["created_at", "2018-09-15 07:42:44.656161"], ["updated_at", "2018-09-15 07:42:44.656161"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:18
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Safeway"], ["created_at", "2018-09-15 07:42:44.657188"], ["updated_at", "2018-09-15 07:42:44.657188"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:20
+  [1m[36mCompany Create (0.2ms)[0m  [1m[32mINSERT INTO "companies" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "FoodSource"], ["created_at", "2018-09-15 07:42:44.658240"], ["updated_at", "2018-09-15 07:42:44.658240"]]
+  ↳ db/migrate/20180915074045_company_load_data.rb:22
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180915074045"]]
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (34.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+Migrating to EmployerDetailsLoadData (20180915074213)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[36mEmployer Create (0.4ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "walmart@gmail.com"], ["company_id", 1], ["created_at", "2018-09-15 07:42:44.734979"], ["updated_at", "2018-09-15 07:42:44.734979"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:4
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "target@gmail.com"], ["company_id", 2], ["created_at", "2018-09-15 07:42:44.736357"], ["updated_at", "2018-09-15 07:42:44.736357"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:6
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "costco@gmail.com"], ["company_id", 3], ["created_at", "2018-09-15 07:42:44.737290"], ["updated_at", "2018-09-15 07:42:44.737290"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:8
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "marshalls@gmail.com"], ["company_id", 4], ["created_at", "2018-09-15 07:42:44.738146"], ["updated_at", "2018-09-15 07:42:44.738146"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:10
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "jcpenny@gmail.com"], ["company_id", 5], ["created_at", "2018-09-15 07:42:44.738964"], ["updated_at", "2018-09-15 07:42:44.738964"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:12
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "kmart@gmail.com"], ["company_id", 6], ["created_at", "2018-09-15 07:42:44.739788"], ["updated_at", "2018-09-15 07:42:44.739788"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:14
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "walgreens@gmail.com"], ["company_id", 7], ["created_at", "2018-09-15 07:42:44.740593"], ["updated_at", "2018-09-15 07:42:44.740593"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:16
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ikea@gmail.com"], ["company_id", 8], ["created_at", "2018-09-15 07:42:44.741484"], ["updated_at", "2018-09-15 07:42:44.741484"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:18
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "safeway@gmail.com"], ["company_id", 9], ["created_at", "2018-09-15 07:42:44.742354"], ["updated_at", "2018-09-15 07:42:44.742354"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:20
+  [1m[36mEmployer Create (0.2ms)[0m  [1m[32mINSERT INTO "employers" ("email", "company_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "foodsource@gmail.com"], ["company_id", 10], ["created_at", "2018-09-15 07:42:44.743163"], ["updated_at", "2018-09-15 07:42:44.743163"]]
+  ↳ db/migrate/20180915074213_employer_details_load_data.rb:22
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180915074213"]]
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/qa/.rvm/gems/ruby-2.5.1@global/bin/rake:23

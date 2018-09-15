@@ -1,4 +1,4 @@
-class EmployerLoadData < ActiveRecord::Migration[5.2]
+class EmployerDetailsLoadData < ActiveRecord::Migration[5.2]
   def change
     emp1 = Employer.new(:email => "walmart@gmail.com",:company_id =>1)
     emp1.save(:validate => false)

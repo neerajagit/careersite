@@ -1,4 +1,4 @@
-class LoadData < ActiveRecord::Migration[5.2]
+class CompanyLoadData < ActiveRecord::Migration[5.2]
   def change
     str1 = Company.new(:name => "Walmart")
     str1.save(:validate => false)
