@@ -1,3 +1,4 @@
+# used  employers & other tables to reterive information the applicants
 class EmployerLoginController < ApplicationController
     def login
     end
@@ -15,7 +16,6 @@ class EmployerLoginController < ApplicationController
                     if !@applicant_record.empty?
                         @applicant_record.each do |com|
                             @applicant_list_arr.push(com["name"])
-                            puts "applicant_record: #{com["name"]}"
                         end
                     end
                     

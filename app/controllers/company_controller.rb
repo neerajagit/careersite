@@ -1,8 +1,7 @@
+# used to retrieve company records from company table. used disable tag track the applicant status and to freeze the apply button
 class CompanyController < ApplicationController
     def index
-        puts "name:#{params[:applicant]}"
         @Applicant_id = params[:applicant]
-        #@company = Company.left_outer_joins(:transactions).where(transactions: { applicant_id: [nil, params[:applicant]] })
         @company = Company.all
         if !@company.empty?
             @company.each do |com|

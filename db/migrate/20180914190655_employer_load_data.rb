@@ -12,5 +12,13 @@ class EmployerLoadData < ActiveRecord::Migration[5.2]
     emp5.save(:validate => false)
     emp6 = Employer.new(:email => "kmart@gmail.com",:company_id =>6)
     emp6.save(:validate => false)
+    emp7 = Employer.new(:email => "walgreens@gmail.com",:company_id =>7)
+    emp7.save(:validate => false)
+    emp8 = Employer.new(:email => "ikea@gmail.com",:company_id =>8)
+    emp8.save(:validate => false)
+    emp9 = Employer.new(:email => "safeway@gmail.com",:company_id =>9)
+    emp9.save(:validate => false)
+    emp10 = Employer.new(:email => "foodsource@gmail.com",:company_id =>10)
+    emp10.save(:validate => false)
   end
 end
